@@ -1,4 +1,10 @@
 daniel/INeedData.class
+rule/MoreThanTenKmPerWeekRule.class
+util/DateTimeUtil.class
+model/Record.class
+model/DateTime.class
+rule/RanForThreeConsecutiveDaysRule.class
 sort/FileSorter.class
+rule/Rule.class
 application/ApplicationLogic.class
 application/Application.class

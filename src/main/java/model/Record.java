@@ -1,8 +1,14 @@
 package model;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class Record {
+import java.util.Comparator;
+
+public class Record implements Comparator<Record> {
+
+    Logger logger = LogManager.getLogger(Record.class);
 
     public String getType() {
         return type;
@@ -68,6 +74,30 @@ public class Record {
         this.calories = calories;
     }
 
+    public String getStart() { return start; }
+
+    public void setStart(String start) { this.start = start; }
+
+    public String getEnd() { return end; }
+
+    public void setEnd(String end) { this.end = end; }
+
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
+    }
+
+    public String getActivity_id() {
+        return activity_id;
+    }
+
+    public void setActivity_id(String activity_id) {
+        this.activity_id = activity_id;
+    }
+
     public Record(JsonNode source) {
         this.user_id = source.get("user_id") != null ? source.get("user_id").asText() : "";
         this.activity_id = source.get("activity_id") != null ? source.get("activity_id").asText() : "";
@@ -83,6 +113,8 @@ public class Record {
         this.descent = source.get("descent") != null ? source.get("descent").asDouble() : -1.0d;
     }
 
+    public Record() { }
+
     private String user_id;
     private String activity_id;
     private String start;
@@ -97,4 +129,35 @@ public class Record {
 
     private int steps;
     private int calories;
+
+    public String getSimpleStartDate() {
+        // 2017-12-01T22:35:55Z
+        return this.start.substring(0, 10);
+    }
+
+    private boolean equals(Record r1, Record r2) {
+        return r1.getStart().equalsIgnoreCase(r2.getStart())
+                && r1.getUser_id().equalsIgnoreCase(r2.getUser_id());
+    }
+
+    public int compare(Record r1, Record r2) {
+        if (r1 == null || r2 == null) {
+            throw new IllegalArgumentException("One or more of the arguments passed to RecordComparator.compare() is null");
+        }
+
+        DateTime first = new DateTime(r1.getStart());
+        DateTime second = new DateTime(r2.getStart());
+
+        if (equals(r1, r2)) {
+            return 0;
+        }
+
+        // Sort in ascending order of date [earliest date first]
+        if (first.isBefore(second)) {
+            return -1;
+        }
+        else {
+            return 1;
+        }
+    }
 }

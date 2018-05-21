@@ -1,4 +1,10 @@
 /Users/dkesner/Documents/niketest/src/main/java/sort/FileSorter.java
+/Users/dkesner/Documents/niketest/src/main/java/model/DateTime.java
+/Users/dkesner/Documents/niketest/src/main/java/rule/RanForThreeConsecutiveDaysRule.java
 /Users/dkesner/Documents/niketest/src/main/java/application/Application.java
 /Users/dkesner/Documents/niketest/src/main/java/daniel/INeedData.java
 /Users/dkesner/Documents/niketest/src/main/java/application/ApplicationLogic.java
+/Users/dkesner/Documents/niketest/src/main/java/model/Record.java
+/Users/dkesner/Documents/niketest/src/main/java/util/DateTimeUtil.java
+/Users/dkesner/Documents/niketest/src/main/java/rule/MoreThanTenKmPerWeekRule.java
+/Users/dkesner/Documents/niketest/src/main/java/rule/Rule.java

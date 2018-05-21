@@ -8,18 +8,16 @@ import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.FileWriter;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class FileSorter {
 
     private final File sourceDirectory = new File("src/main/resources/sourceData");
     private final File targetDirectory = new File("src/main/resources/targetData");
-    private final File tmpDirectory = new File("src/main/resources/tmp");
     private final ObjectMapper objectMapper = new ObjectMapper();
     private static final Logger logger = LogManager.getLogger(FileSorter.class);
 
@@ -60,18 +58,35 @@ public class FileSorter {
         return true;
     }
 
-    public boolean sortByDate() {
+    // Returns a list of Records in descending order by start time (newest record first)
+    public List<Record> sortByDate(File targetDataFile) throws IOException {
 
-        for (File eachFile : targetDirectory.listFiles()) {
+        List<Record> list = new ArrayList<Record>();
+        BufferedReader reader;
+        String line;
 
+        try {
+            reader = new BufferedReader(new FileReader(targetDataFile));
+        } catch (IOException ioe) {
+            logger.info(ioe);
+            throw new RuntimeException("Couldn't initialize BufferedReader for " + targetDataFile.getAbsolutePath());
         }
 
-        return true;
+        while ((line = reader.readLine()) != null) {
+            // Read each record into a JsonNode, then convert to Record object and add to list
+            if (! line.startsWith("[") && !line.startsWith("]")) {
+                list.add(new Record(objectMapper.readTree(line.substring(0, line.length() - 1))));
+            }
+        }
+
+        Collections.sort(list, new Record());
+
+        return list;
     }
 
-    public static void main(String... a) throws Exception {
-        FileSorter sort = new FileSorter();
-        sort.concat();
-    }
+//        public static void main (String...a) throws Exception {
+//            FileSorter sort = new FileSorter();
+//            sort.sortByDate(new File("src/main/resources/targetData/6bd5f3c04e6b5279aca633c2a245dd9c.json"));
+//        }
 
-}
+    }
