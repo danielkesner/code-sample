@@ -4,8 +4,8 @@ At a high level, the algorithm I wrote does the following:
 
 1. Concatenate all records for a given user into a single file that contains all records for that user ID (original files are in src/main/java/resources/sourceData, the concatenated files are in /targetData)
 2. Sort these records by start date/time (i.e. when they began their workout) in ascending order and hold this sorted list of records in memory as a Java object
-3. Apply a rule (represented in the code as a class that implements the `Rule` interface) to the sorted list of records; return the number of times the rule is satisfied 
-4. Repeat for all rules; build JSON object that contains results, and output to standard output
+3. Apply one or more rules (represented in the code as a class that implements the `Rule` interface) to the sorted list of records; return the number of times the rule is satisfied 
+4. Build JSON object that contains results, and output to standard output
 
 ## Assumptions
 
