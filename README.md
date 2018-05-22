@@ -9,5 +9,5 @@ The only dependencies you need locally to build and run this project are Maven (
 4. Run the program with a specific user ID by passing it as a parameter to the `run.sh` script. 
 For example: `./run.sh "6bd5f3c04e6b5279aca633c2a245dd9c"` (make sure to surround the string with quotes!)
 
-## Expected outputs
-See the documentation folder for more information about how to interpret the outputs of this program.
+## Documentation
+See the documentation folder for more information about the project.
