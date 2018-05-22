@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import rule.MoreThanTenKmPerWeekRule;
 import rule.RanForThreeConsecutiveDaysRule;
+import rule.SetNewRecordForLongestRunRule;
 import sort.FileSorter;
 
 import java.io.File;
@@ -21,11 +22,11 @@ public class ApplicationLogic {
 
     private static final Logger logger = LogManager.getLogger(ApplicationLogic.class);
 
-    // Usage: java Application <userId> [optional] -v
+    // Usage: java Application <userId>
     public static void run(String[] programArgs) throws IOException {
 
         if (programArgs == null || programArgs.length == 0) {
-            throw new IllegalArgumentException("You must specify at least one user id!");
+            throw new IllegalArgumentException("You must specify a user id!");
         }
 
         String userId = programArgs[0];
@@ -41,11 +42,13 @@ public class ApplicationLogic {
 
         int ranForThreeConsecutiveDays = new RanForThreeConsecutiveDaysRule().satisfiesRule(sortedRecords);
         int moreThanTenKmPerWeek = new MoreThanTenKmPerWeekRule().satisfiesRule(sortedRecords);
+        int numberOfNewPersonalBestsForLongestRun = new SetNewRecordForLongestRunRule().satisfiesRule(sortedRecords);
 
         output = objectMapper.createObjectNode();
         output.put("user_id", userId);
         output.put("ThreeConsecutiveDays", ranForThreeConsecutiveDays);
         output.put("MoreThanTenKmInAWeek", moreThanTenKmPerWeek);
+        output.put("BeatPreviousPersonalRecordForLongestRun", numberOfNewPersonalBestsForLongestRun);
 
         System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(output));
     }

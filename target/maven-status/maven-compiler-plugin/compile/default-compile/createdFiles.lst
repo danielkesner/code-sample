@@ -6,5 +6,6 @@ rule/RanForThreeConsecutiveDaysRule.class
 sort/FileSorter.class
 rule/Rule.class
 constants/FileConstants.class
+rule/SetNewRecordForLongestRunRule.class
 application/ApplicationLogic.class
 application/Application.class
