@@ -16,8 +16,8 @@ import java.util.List;
 
 public class ApplicationLogic {
 
-    static ObjectNode output;
-    static ObjectMapper objectMapper = new ObjectMapper();
+    private static ObjectNode output;
+    private static ObjectMapper objectMapper = new ObjectMapper();
 
     // Usage: java Application <userId>
     public static void run(String[] programArgs) throws IOException {
