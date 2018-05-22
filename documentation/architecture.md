@@ -2,7 +2,7 @@
 
 At a high level, the algorithm I wrote does the following:
 
-1. Concatenate all records (I'm referring to the individual JSON data files as 'records') for a given user into a single file that contains all records for that user ID (original files are in src/main/java/resources/sourceData, the concatenated files are in targetData)
+1. Concatenate all records (I'm referring to the individual JSON data files as 'records') for a given user into a single file that contains all records for that user ID (original files are in `src/main/java/resources/sourceData`, the concatenated files are in `targetData`)
 2. Sort these records by start date/time (i.e. when they began their workout) in ascending order and hold this sorted list of records in memory as a Java object
 3. Apply one or more rules (represented in the code as a class that implements the `Rule` interface) to the sorted list of records; return the number of times the rule is satisfied 
 4. Build JSON object that contains results, and output to standard output
@@ -10,7 +10,7 @@ At a high level, the algorithm I wrote does the following:
 ## Assumptions
 
 - All of the records for a user (when stored as Java objects) can fit in memory at once on a typical machine. This means that the number of records per user is below some threshold, which is probably on the order of ~1 million records.
-- If this algorithm was used in an environment with billions (or more) of individual records, the record concatenation step would probably need to be redesigned. Currently, it iterates over all data files in the `sourceData` directory and creates `Record` objects for all files that have a specific user ID. Iterating over billions of files would take too long in production, but this problem could be solved by keeping the filesystem in alphabetical sorted order by `user_id`, then using binary search to find the first file with a matching user ID, then reading the next file until you come to a file with a non-matching `user_id`.
+- If this algorithm was used in an environment with billions (or more) of individual records, the record concatenation step would probably need to be redesigned. Currently, it iterates over all data files in the `sourceData` directory and creates `Record` objects for all files that have a specific user ID. Iterating over billions of files would take too long in production, but this problem could be solved by keeping the filesystem in alphabetical sorted order by `user_id`, using binary search or hashing to find the first file with a matching user ID, then iterating forward until you come to a file with a non-matching `user_id`.
 
 ## Design decisions
 The design decisions that I emphasized when creating this system were the following:
