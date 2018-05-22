@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import constants.FileConstants;
 import model.Record;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
 import rule.MoreThanTenKmPerWeekRule;
 import rule.RanForThreeConsecutiveDaysRule;
 import rule.SetNewRecordForLongestRunRule;
@@ -21,6 +22,10 @@ public class ApplicationLogic {
 
     // Usage: java Application <userId>
     public static void run(String[] programArgs) throws IOException {
+
+        if (! FileConstants.getTargetDirectory().exists()) {
+            FileConstants.getTargetDirectory().mkdir();
+        }
 
         if (programArgs == null || programArgs.length == 0) {
             throw new IllegalArgumentException("You must specify a user id!");
