@@ -1,18 +1,13 @@
 package model;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import java.time.YearMonth;
 
 public class DateTime {
 
-    static Logger logger = LogManager.getLogger(DateTime.class);
-
-    private String _data;
-    //2015-10-29T20:16:08.371000Z
+    //i.e. 2015-10-29T20:16:08.371000Z
     // or
-    //2016-08-17T22:07:04Z
+    // 2016-08-17T22:07:04Z
+    private String _data;
 
     private int year;
     private int month;

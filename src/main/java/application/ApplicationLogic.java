@@ -2,9 +2,9 @@ package application;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import constants.FileConstants;
 import model.Record;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.commons.io.FileUtils;
 import rule.MoreThanTenKmPerWeekRule;
 import rule.RanForThreeConsecutiveDaysRule;
 import rule.SetNewRecordForLongestRunRule;
@@ -12,7 +12,6 @@ import sort.FileSorter;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 
 public class ApplicationLogic {
@@ -20,14 +19,15 @@ public class ApplicationLogic {
     static ObjectNode output;
     static ObjectMapper objectMapper = new ObjectMapper();
 
-    private static final Logger logger = LogManager.getLogger(ApplicationLogic.class);
-
     // Usage: java Application <userId>
     public static void run(String[] programArgs) throws IOException {
 
         if (programArgs == null || programArgs.length == 0) {
             throw new IllegalArgumentException("You must specify a user id!");
         }
+
+        // Clear the target directory folder in between runs
+        FileUtils.cleanDirectory(FileConstants.getTargetDirectory());
 
         String userId = programArgs[0];
 

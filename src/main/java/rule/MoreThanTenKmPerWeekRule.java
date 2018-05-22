@@ -4,9 +4,7 @@ import model.Record;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.joda.time.DateTime;
-import sort.FileSorter;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,17 +19,9 @@ public class MoreThanTenKmPerWeekRule implements Rule {
 
         for (int i = 0; i < list.size() - 6; i++) {
             if (qualifies(list, i)) {
-
-//                logger.info("Rule satisfied!");
-//                for (Record record : recordsInCalendarWeek) {
-//                    logger.info("On " + record.getStart() + " you ran " + record.getDistance() + " km.");
-//                }
-//                logger.info("In total, you ran " + sumDistance(recordsInCalendarWeek) + " km this week!");
-
                 counter++;
             }
         }
-
         return counter;
     }
 
@@ -121,19 +111,6 @@ public class MoreThanTenKmPerWeekRule implements Rule {
         recordsInCalendarWeek = getAllRecordsInCalendarWeek(list, index, endOfCalendarWeek);
         recordsInCalendarWeek.add(0, list.get(index));  // put the first record at the beginning of the list
 
-        // Grab the first record, then look forward until you reach a record that is OUTSIDE
-        // of one calendar week... take the set of records that you just built, see if
-        // total dist > 10km
-
-        // Look at all Records in the range (dateTime ... endOfCalendarWeek), if total dist > 10 -- keep
-        // THEN increment TO NEXT CALENDAR WEEK
         return sumDistance(recordsInCalendarWeek) > 10.0;
-    }
-
-    public static void main(String... a) throws Exception {
-        FileSorter sorter = new FileSorter();
-        File file = new File("src/main/resources/targetData/d77908482ed2505ebbf17ef72be2f080.json");
-        List<Record> list = sorter.sortByDate(file);
-        logger.info(new MoreThanTenKmPerWeekRule().satisfiesRule(list));
     }
 }

@@ -1,14 +1,10 @@
 package model;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.util.Comparator;
 
 public class Record implements Comparator<Record> {
-
-    Logger logger = LogManager.getLogger(Record.class);
 
     public String getType() {
         return type;
@@ -131,7 +127,6 @@ public class Record implements Comparator<Record> {
     private int calories;
 
     public String getSimpleStartDate() {
-        // 2017-12-01T22:35:55Z
         return this.start.substring(0, 10);
     }
 
