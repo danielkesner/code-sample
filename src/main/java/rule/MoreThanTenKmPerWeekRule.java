@@ -21,11 +21,13 @@ public class MoreThanTenKmPerWeekRule implements Rule {
 
         for (int i = 0; i < list.size() - 6; i++) {
             if (qualifies(list, i)) {
-                logger.info("Rule satisfied!");
-                for (Record record : recordsInCalendarWeek) {
-                    logger.info("On " +record.getStart() + " you ran " + record.getDistance()+ " km.");
-                }
-                logger.info("In total, you ran " + sumDistance(recordsInCalendarWeek) + " km this week!");
+
+//                logger.info("Rule satisfied!");
+//                for (Record record : recordsInCalendarWeek) {
+//                    logger.info("On " + record.getStart() + " you ran " + record.getDistance() + " km.");
+//                }
+//                logger.info("In total, you ran " + sumDistance(recordsInCalendarWeek) + " km this week!");
+
                 counter++;
             }
         }
@@ -41,38 +43,37 @@ public class MoreThanTenKmPerWeekRule implements Rule {
         );
 
         int dayOfWeek = current.getDayOfWeek();
-        org.joda.time.DateTime nextSunday =  current.plusDays(7 - dayOfWeek);
+        org.joda.time.DateTime nextSunday = current.plusDays(7 - dayOfWeek);
 
         return nextSunday;
     }
 
-    /** Returns true if first is on or before second
-    *   Ex: (02-08-2015).isOnOrBefore(02-08-2015) == TRUE
-     *      (02-08-2015).isOnOrBefore(02-07-2015) == FALSE
-     *      (02-08-2015).isOnOrBefore(01-08-2015) == FALSE
-     *      (02-08-2015).isOnOrBefore(02-08-2016) == TRUE  */
+    /**
+     * Returns true if first is on or before second
+     * Ex: (02-08-2015).isOnOrBefore(02-08-2015) == TRUE
+     * (02-08-2015).isOnOrBefore(02-07-2015) == FALSE
+     * (02-08-2015).isOnOrBefore(01-08-2015) == FALSE
+     * (02-08-2015).isOnOrBefore(02-08-2016) == TRUE
+     */
     private boolean isOnOrBefore(org.joda.time.DateTime first, org.joda.time.DateTime second) {
 
         if (first.getYear() < second.getYear()) {
             return true;
-        }
-        else if (first.getYear() > second.getYear()) {
+        } else if (first.getYear() > second.getYear()) {
             return false;
         }
         // Same year
         else {
             if (first.getMonthOfYear() < second.getMonthOfYear()) {
                 return true;
-            }
-            else if (first.getMonthOfYear() > second.getMonthOfYear()) {
+            } else if (first.getMonthOfYear() > second.getMonthOfYear()) {
                 return false;
             }
             // Same year and month
             else {
                 if (first.getDayOfMonth() < second.getDayOfMonth()) {
                     return true;
-                }
-                else if (first.getDayOfMonth() > second.getDayOfMonth()) {
+                } else if (first.getDayOfMonth() > second.getDayOfMonth()) {
                     return false;
                 }
                 // Else, the two objects have the same year/month/day
@@ -88,7 +89,7 @@ public class MoreThanTenKmPerWeekRule implements Rule {
                                                           org.joda.time.DateTime endOfCalendarWeek) {
         ArrayList<Record> ret = new ArrayList<>();
         // Starting with the next record
-        for (int i = index+1; i < list.size(); i++) {
+        for (int i = index + 1; i < list.size(); i++) {
             // Continue until you see a record outside of calendar week
             model.DateTime modelDateTime = new model.DateTime(list.get(i).getStart());
             org.joda.time.DateTime currentDateTime = new DateTime(
@@ -131,7 +132,7 @@ public class MoreThanTenKmPerWeekRule implements Rule {
 
     public static void main(String... a) throws Exception {
         FileSorter sorter = new FileSorter();
-        File file = new File("src/main/resources/targetData/4e7aaa167b9b5ff7b9b3a22dee8c2085.json");
+        File file = new File("src/main/resources/targetData/d77908482ed2505ebbf17ef72be2f080.json");
         List<Record> list = sorter.sortByDate(file);
         logger.info(new MoreThanTenKmPerWeekRule().satisfiesRule(list));
     }

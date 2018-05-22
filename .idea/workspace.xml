@@ -2,37 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0e44e3c-61d1-4627-a2d8-9feb4f032742" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/DateTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rule/MoreThanTenKmPerWeekRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rule/RanForThreeConsecutiveDaysRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rule/Rule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/DateTimeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ComparatorUnitTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DateTimeUnitTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constants/FileConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/CrunchifyTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/CrunchifyTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/ApplicationLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/ApplicationLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daniel/INeedData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rule/MoreThanTenKmPerWeekRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/MoreThanTenKmPerWeekRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rule/RanForThreeConsecutiveDaysRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rule/RanForThreeConsecutiveDaysRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sort/FileSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sort/FileSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/targetData/40d7ae29e393582abdbcb8c726249e22.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/targetData/4e7aaa167b9b5ff7b9b3a22dee8c2085.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/targetData/6bd5f3c04e6b5279aca633c2a245dd9c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/targetData/72eff89c74cc57178e02f103187ad579.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/targetData/c7e962db02da55209f02fe3d8a86c99d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/targetData/d77908482ed2505ebbf17ef72be2f080.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testinfo.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/testinfo.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application/ApplicationLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/ApplicationLogic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daniel/INeedData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Record.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/sort/FileSorter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sort/FileSorter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tmp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/nike-test-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nike-test-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -51,14 +36,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DateTime.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/DateTime.java">
+      <file leaf-file-name="ApplicationLogic.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/ApplicationLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="125">
+              <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#parseData#0;class#DateTime#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testinfo.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/testinfo.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="240">
+                <caret line="16" selection-start-line="16" selection-end-line="16" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RanForThreeConsecutiveDaysRule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rule/RanForThreeConsecutiveDaysRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MoreThanTenKmPerWeekRule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rule/MoreThanTenKmPerWeekRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#isOnOrBefore#0;class#MoreThanTenKmPerWeekRule#0" />
+                <element signature="method#sumDistance#0;class#MoreThanTenKmPerWeekRule#0" />
               </folding>
             </state>
           </provider>
@@ -67,57 +89,10 @@
       <file leaf-file-name="FileSorter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sort/FileSorter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="436">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4e7aaa167b9b5ff7b9b3a22dee8c2085.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/targetData/4e7aaa167b9b5ff7b9b3a22dee8c2085.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3345">
-              <caret line="223" column="1" selection-start-line="223" selection-start-column="1" selection-end-line="223" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RanForThreeConsecutiveDaysRule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rule/RanForThreeConsecutiveDaysRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Record.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Record.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoreThanTenKmPerWeekRule.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rule/MoreThanTenKmPerWeekRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="120" column="96" selection-start-line="120" selection-start-column="96" selection-end-line="120" selection-end-column="96" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#isOnOrBefore#0;class#MoreThanTenKmPerWeekRule#0" />
-                <element signature="method#sumDistance#0;class#MoreThanTenKmPerWeekRule#0" />
               </folding>
             </state>
           </provider>
@@ -143,11 +118,13 @@
       <find>d77908</find>
       <find>getUser</find>
       <find>recordsInCalendarWeek</find>
+      <find>main(</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/resources/data</dir>
       <dir>$PROJECT_DIR$/src/main/resources/targetData</dir>
       <dir>$PROJECT_DIR$/src/main/resources/sourceData</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -157,7 +134,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/data/0025dec6d90453b7807b3910845c9f5d.json" />
-        <option value="$PROJECT_DIR$/src/testinfo.md" />
         <option value="$PROJECT_DIR$/src/main/resources/sourceData/0a3e4286711e55349eecdf914716ec5a.json" />
         <option value="$PROJECT_DIR$/src/main/java/daniel/INeedData.java" />
         <option value="$PROJECT_DIR$/src/main/resources/targetData/6bd5f3c04e6b5279aca633c2a245dd9c.json" />
@@ -169,17 +145,21 @@
         <option value="$PROJECT_DIR$/src/main/resources/suites/unit_tests.xml" />
         <option value="$PROJECT_DIR$/src/test/suites/unit_tests.xml" />
         <option value="$PROJECT_DIR$/src/main/java/sort/RecordComparator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/ApplicationLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/application/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/rule/Rule.java" />
         <option value="$PROJECT_DIR$/src/test/java/ComparatorUnitTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/DateTimeUnitTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/DateTime.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rule/RanForThreeConsecutiveDaysRule.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Record.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/constants/FileConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/ArgumentParser.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/sort/FileSorter.java" />
+        <option value="$PROJECT_DIR$/src/testinfo.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/targetData/akjl.json" />
         <option value="$PROJECT_DIR$/src/main/java/rule/MoreThanTenKmPerWeekRule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rule/RanForThreeConsecutiveDaysRule.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/ApplicationLogic.java" />
       </list>
     </option>
   </component>
@@ -199,11 +179,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1440" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="height" value="807" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -212,6 +191,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,32 +256,10 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="niketest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="niketest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="targetData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="niketest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="niketest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="niketest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="niketest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,7 +291,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MoreThanTenKmPerWeekRule">
+  <component name="RunManager" selected="Application.RanForThreeConsecutiveDaysRule">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.Application" />
+      <module name="niketest" />
+      <option name="PROGRAM_PARAMETERS" value="6bd5f3c04e6b5279aca633c2a245dd9c" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="FileSorter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sort.FileSorter" />
       <module name="niketest" />
@@ -409,29 +379,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="DateTimeUnitTests.secondMinuteBeforeFirst" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="niketest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DateTimeUnitTests" />
-      <option name="METHOD_NAME" value="secondMinuteBeforeFirst" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -455,19 +402,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.DateTimeUnitTests.secondMinuteBeforeFirst" />
-      <item itemvalue="TestNG.ComparatorUnitTests.threeDifferentYears" />
       <item itemvalue="Application.FileSorter" />
       <item itemvalue="Application.RanForThreeConsecutiveDaysRule" />
       <item itemvalue="Application.MoreThanTenKmPerWeekRule" />
+      <item itemvalue="Application.Application" />
+      <item itemvalue="TestNG.ComparatorUnitTests.threeDifferentYears" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MoreThanTenKmPerWeekRule" />
         <item itemvalue="Application.RanForThreeConsecutiveDaysRule" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.MoreThanTenKmPerWeekRule" />
         <item itemvalue="Application.FileSorter" />
         <item itemvalue="TestNG.ComparatorUnitTests.threeDifferentYears" />
-        <item itemvalue="TestNG.DateTimeUnitTests.secondMinuteBeforeFirst" />
       </list>
     </recent_temporary>
   </component>
@@ -485,7 +432,8 @@
       <workItem from="1526520095334" duration="950000" />
       <workItem from="1526589550732" duration="1941000" />
       <workItem from="1526756901139" duration="45807000" />
-      <workItem from="1526921227599" duration="5995000" />
+      <workItem from="1526921227599" duration="11532000" />
+      <workItem from="1526952906838" duration="7319000" />
     </task>
     <servers />
   </component>
@@ -522,10 +470,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58250000" />
+    <option name="totallyTimeSpent" value="71106000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1440" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="807" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -536,16 +484,16 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7346154" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32957748" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45633802" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.20422535" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14306152" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14735337" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.66923076" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.7633803" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3297568" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -557,29 +505,29 @@
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3297568" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.53521127" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17095852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32957748" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32957748" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32957748" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3297568" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4225352" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32957748" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32957748" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info id="Favorites" order="4" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,11 +538,45 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="61" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rule/MoreThanTenKmPerWeekRule.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="67" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>FileConstants.getTargetDirectory().listFiles()</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>constants.FileConstants</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>programArgs.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>programArgs[0] == null</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>programArgs == null</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>programArgs</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>ObjectSizeCalculator.getObjectSize(list)</expression-string>
         <language-id>JAVA</language-id>
@@ -617,58 +599,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>currentDateTime.getDayOfMonth()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>currentDateTime.getMonthOfYear()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>currentDateTime</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ret</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>currentDateTime.isBeforeNow()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/testinfo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="255">
-            <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sourceData/0025dec6d90453b7807b3910845c9f5d.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Record.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -830,13 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/targetData/d77908482ed2505ebbf17ef72be2f080.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/targetData/6bd5f3c04e6b5279aca633c2a245dd9c.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -845,13 +771,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/suites/unit_tests.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sourceData/0a3e4286711e55349eecdf914716ec5a.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sourceData/0a04e01b77965cbf99217809dd803a77.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -873,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/ApplicationLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sort/RecordComparator.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ComparatorUnitTests.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -898,13 +810,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -943,20 +848,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rule/RanForThreeConsecutiveDaysRule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Record.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="285">
+          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -971,26 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testinfo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="255">
-            <caret line="17" selection-start-line="17" selection-end-line="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/targetData/4e7aaa167b9b5ff7b9b3a22dee8c2085.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3345">
@@ -998,10 +876,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sort/FileSorter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/ArgumentParser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sourceData/0a3e4286711e55349eecdf914716ec5a.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="15">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constants/FileConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/targetData/d77908482ed2505ebbf17ef72be2f080.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testinfo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="240">
+            <caret line="16" selection-start-line="16" selection-end-line="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/targetData/akjl.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rule/RanForThreeConsecutiveDaysRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1010,12 +941,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rule/MoreThanTenKmPerWeekRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="120" column="96" selection-start-line="120" selection-start-column="96" selection-end-line="120" selection-end-column="96" />
+        <state relative-caret-position="287">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isOnOrBefore#0;class#MoreThanTenKmPerWeekRule#0" />
             <element signature="method#sumDistance#0;class#MoreThanTenKmPerWeekRule#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/FileSorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/ApplicationLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

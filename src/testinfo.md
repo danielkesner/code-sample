@@ -13,8 +13,7 @@ Using the provided data set, calculate the number of times the following rules h
 
 - They ran more than 1km in a single run, 3 days in a row. This should count once per 3 consecutive days. i.e.: having at least one 1k run 6 days in a row counts as 2-times, not 4-times.
 - They ran more than 10km in a calendar week. Consider a calendar week as starting on Monday and ending on Sunday.
-- Be creative and make up a 3rd rule based on what you see in the data.
-(they've increased their distance ran every day for more than 3 days)
+- They've increased their distance ran every day for more than 3 days
 
 Your program should accept a single user id as input (either as a command line argument or from stdin), and output JSON to stdout. Feel free to make assumptions about these requirements and document them as part of your submission.
 
