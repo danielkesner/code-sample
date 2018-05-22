@@ -27,11 +27,15 @@ public class ApplicationLogic {
             FileConstants.getTargetDirectory().mkdir();
         }
 
+        if (! FileConstants.getSourceDirectory().exists()) {
+            FileConstants.getSourceDirectory().mkdir();
+        }
+
         if (programArgs == null || programArgs.length == 0) {
             throw new IllegalArgumentException("You must specify a user id!");
         }
 
-        // Clear the target directory folder in between runs
+        // Clear the contents of the target directory folder on each run
         FileUtils.cleanDirectory(FileConstants.getTargetDirectory());
 
         String userId = programArgs[0];
