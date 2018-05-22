@@ -4,6 +4,9 @@
 The only dependencies you need locally to build and run this project are Maven (3.x.x or higher) and Java (1.8 or higher). Follow these steps to build and run this code:
 
 1. Clone this repository locally (`git clone https://github.com/danielkesner/code-sample.git`)
-2. Go to the root directory (`~/some/path/niketest`) and build the project with `mvn clean package`.
+2. Go to the root directory (`~/some/path/niketest`) and build the project with `mvn clean install`.
 3. To run the program with a specific user ID, pass it as a parameter to the `run.sh` script. 
 For example: `./run.sh "6bd5f3c04e6b5279aca633c2a245dd9c"` (make sure to surround the string with quotes!)
+
+## Expected outputs
+See the documentation folder for more information about how to interpret the outputs of this program.
